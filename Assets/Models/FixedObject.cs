@@ -1,11 +1,19 @@
 ﻿
 public class Fixed {
+    private string prefabName;
+    public string Prefab
+    {
+        get { return prefabName; }
+        set { prefabName = value; }
+    }
+
     private string type;
     public string Type
     {
         get { return type; }
         set { type = value; }
     }
+
     private int width;
 
     public int Width
@@ -47,7 +55,7 @@ public class Fixed {
     public static Fixed CreatePrototype(string type, int width, int length, int height)
     {
         Fixed fo = new Fixed();
-        fo.Type = type;
+        fo.Prefab = type;
         fo.Width = width;
         fo.length = length;
         fo.Height = height;
@@ -57,7 +65,7 @@ public class Fixed {
     public static Fixed InstantiatePrototype(Fixed prototype, Block[] parentBlocks)
     {
         Fixed fo = new Fixed();
-        fo.Type = prototype.Type;
+        fo.Prefab = prototype.Prefab;
         fo.Width = prototype.Width;
         fo.Height = prototype.Height;
         fo.Length = prototype.Length;

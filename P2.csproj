@@ -69,6 +69,7 @@
     <Compile Include="Assets\Controllers\WorldController.cs" />
     <Compile Include="Assets\Models\Block.cs" />
     <Compile Include="Assets\Models\FixedObject.cs" />
+    <Compile Include="Assets\Models\VegetationObject.cs" />
     <Compile Include="Assets\Models\World.cs" />
     <Compile Include="Assets\Scripts\Helper.cs" />
   </ItemGroup>

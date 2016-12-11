@@ -25,6 +25,7 @@ public class GUIController : MonoBehaviour {
         buttons = new Dictionary<string, string>();
         buttons.Add("Bulldoze", "bulldoze");
         buttons.Add("Wall", "wall");
+        buttons.Add("Door", "door");
     }
 
     

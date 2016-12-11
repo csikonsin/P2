@@ -25,7 +25,22 @@ public class Block  {
         }
     }
 
+
     Fixed fixedObject;
+    public Fixed FixedObject
+    {
+        get { return fixedObject; }
+        set { fixedObject = value; }
+    }
+
+    VegetationObject vegetation;
+
+    public VegetationObject Vegetation
+    {
+        get { return vegetation; }
+        set { vegetation = value; }
+    }
+
 
 
     public Block(int x,int y,int z)
